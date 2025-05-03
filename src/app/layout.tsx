@@ -4,6 +4,11 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 
+// Type check environment variables
+if (!process.env.NEXT_PUBLIC_GTM_ID || !process.env.NEXT_PUBLIC_ANALYTICS_ID) {
+  throw new Error('Missing required environment variables');
+}
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,7 +32,7 @@ export default function RootLayout({
     <html lang="en" className="light">
       <head>
         {/* Google Tag Manager */}
-        <GoogleTagManager gtmId="GTM-P3S6394V" />
+        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID as string} />
         {/* End Google Tag Manager */}
       </head>
       <body
@@ -36,7 +41,7 @@ export default function RootLayout({
         <Navigation />
         {children}
       </body>
-      <GoogleAnalytics gaId="G-EPHY4HY29F" />
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_ANALYTICS_ID as string} />
     </html>
   );
 }
