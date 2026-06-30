@@ -16,7 +16,7 @@ export default function Projects() {
             </p>
             <div className="flex flex-wrap gap-4 mt-4">
               <a 
-                href="https://wittjr.pythonanywhere.com" 
+                href="https://heavyuse.us"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors"
@@ -41,7 +41,7 @@ export default function Projects() {
             </p>
             <div className="flex flex-wrap gap-4 mt-4">
               <a 
-                href="https://bucolic-bombolone-57352b.netlify.app/" 
+                href="https://tinyurl.com/the-marquee"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors"
