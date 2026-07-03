@@ -3,6 +3,7 @@ import { GoogleTagManager } from '@next/third-parties/google'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 // Type check environment variables
 if (!process.env.NEXT_PUBLIC_GTM_ID || !process.env.NEXT_PUBLIC_ANALYTICS_ID) {
@@ -40,6 +41,7 @@ export default function RootLayout({
       >
         <Navigation />
         {children}
+        <Footer />
       </body>
         <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_ANALYTICS_ID as string} />
     </html>

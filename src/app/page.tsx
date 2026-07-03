@@ -9,9 +9,6 @@ export default function Home() {
            Generated with Cursor, Windsurf and Next.js (manual only when needed)
         </p>
       </main>
-      <footer className="row-start-3 text-sm text-gray-500 dark:text-gray-400">
-        © {new Date().getFullYear()} All rights reserved
-      </footer>
     </div>
   );
 }

@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "fetch:airtable": "node scripts/fetch-airtable.mjs",
+    "prebuild": "node scripts/fetch-airtable.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

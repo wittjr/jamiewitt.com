@@ -42,3 +42,8 @@ next-env.d.ts
 
 # deploy credentials
 scripts/.env.deploy
+
+# poster images generated at build time by scripts/fetch-airtable.mjs
+# (src/app/stuff/posters.json stays tracked so the build always has it to import)
+/public/posters/
+posters.json
